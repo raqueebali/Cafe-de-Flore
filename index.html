@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café de Flore | Hyderabad — Classic Parisian Bistro Since 1887</title>
+  <meta name="description" content="Welcome to Café de Flore Hyderabad — a legendary Parisian bistro experience since 1887. Discover our artisan pastries, fine coffees, and a timeless literary ambiance across 4 prime Hyderabad locations.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FANCY 3D ANIMATED PRELOADER OVERLAY -->
+  <div class="preloader-overlay" id="preloader">
+    <div class="preloader-content">
+      <!-- 3D Spinning Golden Crest Emblem -->
+      <div class="preloader-crest-3d">
+        <div class="crest-ring-outer"></div>
+        <div class="crest-ring-inner"></div>
+        <div class="crest-letter-3d">F</div>
+      </div>
+      
+      <!-- Staggered Animated Cafe Title -->
+      <h1 class="preloader-title">
+        <span style="animation-delay: 0.1s;">C</span>
+        <span style="animation-delay: 0.2s;">A</span>
+        <span style="animation-delay: 0.3s;">F</span>
+        <span style="animation-delay: 0.4s;">É</span>
+        <span style="margin: 0 8px;"></span>
+        <span style="animation-delay: 0.5s;">D</span>
+        <span style="animation-delay: 0.6s;">E</span>
+        <span style="margin: 0 8px;"></span>
+        <span style="animation-delay: 0.7s;">F</span>
+        <span style="animation-delay: 0.8s;">L</span>
+        <span style="animation-delay: 0.9s;">O</span>
+        <span style="animation-delay: 1.0s;">R</span>
+        <span style="animation-delay: 1.1s;">E</span>
+      </h1>
+
+      <div class="preloader-subtitle">House of Tradition • Since 1887</div>
+
+      <!-- Shimmering Progress Bar -->
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar" id="preloaderBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="brand-crest-3d">
+          <div class="crest-face">F</div>
+          <div class="crest-glow"></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Café de Flore</span>
+          <span class="brand-sub">Hyderabad • Jubilee Hills &amp; Banjara Hills</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#histoire" class="nav-link">History</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#livraison" class="nav-link"><i class="fa-solid fa-truck-ramp-box"></i> Delivery</a></li>
+        <li><a href="#locations" class="nav-link"><i class="fa-solid fa-location-dot"></i> Our Locations</a></li>
+        <li><a href="#reservation" class="nav-link"><i class="fa-solid fa-utensils"></i> Reservation</a></li>
+        <li><a href="#support" class="nav-link"><i class="fa-solid fa-headset"></i> Support</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-sound" id="btnSound" title="Enable Ambient Sound">
+          <i class="fa-solid fa-music"></i>
+        </button>
+        <a href="#reservation" class="btn-vintage btn-gold">
+          <i class="fa-solid fa-utensils"></i> Reserve
+        </a>
+        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-crest-badge">
+        <i class="fa-solid fa-crown" style="color: var(--accent-gold);"></i>
+        <span>House of Tradition • Paris &amp; Hyderabad</span>
+      </div>
+      <h1 class="title-display hero-title">Café de Flore</h1>
+      <p class="hero-subtitle">
+        The Art of Parisian Living in the Heart of Hyderabad<br>
+        <span style="font-size: 0.95rem; letter-spacing: 0.1em; color: var(--accent-gold-bright); font-style: normal; font-weight: 500;">
+          📍 Jubilee Hills • Banjara Hills • Gachibowli • Hitech City
+        </span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#menu" class="btn-vintage btn-gold">
+          <i class="fa-solid fa-book-open"></i> Explore the Menu
+        </a>
+        <a href="#reservation" class="btn-vintage btn-outline-gold">
+          <i class="fa-regular fa-calendar-check"></i> Reserve a Table
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-badge-floating">
+      <div class="scroll-indicator"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- OUR STORY (HERITAGE & TIMELINE) -->
+  <section class="section-container" id="histoire">
+    <div class="section-subtitle">Heritage &amp; Legend</div>
+    <h2 class="section-title">The Literary Spirit of Paris</h2>
+    <div class="filigree-divider">
+      <div class="filigree-line"></div>
+      <div class="filigree-diamond"></div>
+      <div class="filigree-line"></div>
+    </div>
+
+    <div class="story-grid">
+      <div class="story-card-vintage">
+        <p class="story-paragraph">
+          Founded under the Third Republic around 1887, <strong>Café de Flore</strong> takes its name from the statue of the goddess of vegetation on Boulevard Saint-Germain. It quickly became the cradle of Paris's greatest intellectual and artistic revolutions.
+        </p>
+        <p class="story-paragraph">
+          Legendary figures such as Jean-Paul Sartre, Simone de Beauvoir, Guillaume Apollinaire, Ernest Hemingway, and Pablo Picasso gathered here to reimagine the world over the warmth of a coal stove.
+        </p>
+        
+        <div class="quote-box">
+          "The roads to freedom passed through the Flore. We were settled there permanently — from nine in the morning until noon, we worked."
+          <span class="quote-author">— Simone de Beauvoir</span>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1887</div>
+          <div class="timeline-title">Founded on Boulevard Saint-Germain</div>
+          <div class="timeline-desc">Opened by M. Boubal, it quickly became the meeting place for royalist writers and poets of the era.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1939</div>
+          <div class="timeline-title">The Existentialist Era</div>
+          <div class="timeline-desc">Sartre and Simone de Beauvoir made the Flore their permanent office, writing their masterworks here.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1994</div>
+          <div class="timeline-title">Creation of the Prix de Flore</div>
+          <div class="timeline-desc">Establishment of the celebrated literary prize rewarding promising young authors in French literature.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Today</div>
+          <div class="timeline-title">Tradition &amp; Art of Living</div>
+          <div class="timeline-desc">Faithful preservation of traditional recipes — from old-fashioned hot chocolate to the art of white-aproned table service.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE MENU (INTERACTIVE) -->
+  <section class="menu-section" id="menu">
+    <div class="section-container">
+      <div class="section-subtitle">Gastronomy &amp; Fine Roasting</div>
+      <h2 class="section-title">The Flore Menu</h2>
+      <div class="filigree-divider">
+        <div class="filigree-line"></div>
+        <div class="filigree-diamond"></div>
+        <div class="filigree-line"></div>
+      </div>
+
+      <div class="menu-controls">
+        <!-- Category Tabs -->
+        <ul class="menu-tabs">
+          <li><button class="menu-tab-btn active" data-category="all">Full Menu</button></li>
+          <li><button class="menu-tab-btn" data-category="breakfast"><i class="fa-solid fa-sun"></i> Breakfast</button></li>
+          <li><button class="menu-tab-btn" data-category="lunch"><i class="fa-solid fa-utensils"></i> Lunch</button></li>
+          <li><button class="menu-tab-btn" data-category="dinner"><i class="fa-solid fa-moon"></i> Dinner</button></li>
+          <li><button class="menu-tab-btn" data-category="boissons"><i class="fa-solid fa-mug-hot"></i> Beverages &amp; Wines</button></li>
+          <li><button class="menu-tab-btn" data-category="desserts"><i class="fa-solid fa-cake-candles"></i> Desserts</button></li>
+        </ul>
+
+        <!-- Secondary Bar: Filter Chips & Search -->
+        <div class="menu-secondary-bar">
+          <div class="filter-chips">
+            <button class="chip-btn active" data-filter="all">All</button>
+            <button class="chip-btn" data-filter="special">House Speciality</button>
+            <button class="chip-btn" data-filter="veg">Vegetarian</button>
+          </div>
+
+          <div class="menu-search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" class="menu-search-input" id="menuSearch" placeholder="Search a dish or drink...">
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Dynamic Menu Items Injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE DELIVERY APPS SECTION (SWIGGY, ZOMATO, DIRECT) -->
+  <section class="section-container" id="livraison" style="background: var(--bg-card); border-bottom: 1px solid var(--border-parchment);">
+    <div class="section-subtitle">Orders &amp; Delivery</div>
+    <h2 class="section-title">Home Delivery (Online Ordering)</h2>
+    <div class="filigree-divider">
+      <div class="filigree-line"></div>
+      <div class="filigree-diamond"></div>
+      <div class="filigree-line"></div>
+    </div>
+
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: var(--text-muted); font-size: 1.05rem;">
+      Enjoy the iconic specialities of Café de Flore delivered straight to your home or office via our official delivery partners.
+    </p>
+
+    <div class="delivery-grid">
+      <!-- Swiggy Card -->
+      <div class="delivery-card">
+        <div class="delivery-logo-badge swiggy-bg">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <h3 class="delivery-card-title">Swiggy</h3>
+        <p class="delivery-card-desc">Fast delivery in 30–45 minutes. Promotional offers and live order tracking.</p>
+        <a href="https://www.swiggy.com" target="_blank" class="btn-delivery btn-swiggy">
+          <i class="fa-solid fa-bag-shopping"></i> Order on Swiggy
+        </a>
+      </div>
+
+      <!-- Zomato Card -->
+      <div class="delivery-card">
+        <div class="delivery-logo-badge zomato-bg">
+          <i class="fa-solid fa-bowl-food"></i>
+        </div>
+        <h3 class="delivery-card-title">Zomato</h3>
+        <p class="delivery-card-desc">Order your pastries, coffees, and bistro dishes on Zomato Gold.</p>
+        <a href="https://www.zomato.com" target="_blank" class="btn-delivery btn-zomato">
+          <i class="fa-solid fa-motorcycle"></i> Order on Zomato
+        </a>
+      </div>
+
+      <!-- Direct Takeaway Card -->
+      <div class="delivery-card">
+        <div class="delivery-logo-badge direct-bg">
+          <i class="fa-solid fa-store"></i>
+        </div>
+        <h3 class="delivery-card-title">Direct Order &amp; Takeaway</h3>
+        <p class="delivery-card-desc">Free pickup at Café de Flore with premium packaging — no delivery wait.</p>
+        <a href="#reservation" class="btn-delivery btn-burgundy" style="color: #fff;">
+          <i class="fa-solid fa-box-open"></i> Order for Takeaway
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="section-container" id="galerie">
+    <div class="section-subtitle">Ambiance &amp; Delights</div>
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="filigree-divider">
+      <div class="filigree-line"></div>
+      <div class="filigree-diamond"></div>
+      <div class="filigree-line"></div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox('images/hero.png', 'Historic Lounge &amp; Chandeliers')">
+        <img src="images/hero.png" alt="Interior of Café de Flore">
+        <div class="gallery-overlay">
+          <div class="gallery-title">The Historic Lounge</div>
+          <div class="gallery-caption">Period Woodwork &amp; Red Banquettes</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/croissant.png', 'Traditional Breakfast')">
+        <img src="images/croissant.png" alt="Breakfast pastries">
+        <div class="gallery-overlay">
+          <div class="gallery-title">Parisian Breakfast</div>
+          <div class="gallery-caption">Butter Croissant AOP &amp; Espresso</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/bistro_dish.png', 'Croque-Madame Speciality')">
+        <img src="images/bistro_dish.png" alt="Croque Madame gourmet">
+        <div class="gallery-overlay">
+          <div class="gallery-title">The Croque-Madame Flore</div>
+          <div class="gallery-caption">Poilâne Bread &amp; Aged Gruyère</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SLIDER -->
+  <section class="testimonials-section">
+    <div class="section-container" style="padding-top: 0; padding-bottom: 0;">
+      <div class="section-subtitle" style="color: var(--accent-gold);">Reviews &amp; Quotes</div>
+      <h2 class="section-title">What They Say</h2>
+      <div class="filigree-divider">
+        <div class="filigree-line"></div>
+        <div class="filigree-diamond"></div>
+        <div class="filigree-line"></div>
+      </div>
+
+      <div class="testimonial-card" id="testimonialCard">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text" id="testimonialText">
+          "Café de Flore is far more than a café — it is the true beating heart of the Parisian spirit. One feels the joyful weight of ideas and history with every sip."
+        </p>
+        <div class="testimonial-author-name" id="testimonialAuthor">Jean-Paul Sartre</div>
+        <div class="testimonial-author-title" id="testimonialRole">Philosopher &amp; Regular of the Flore</div>
+      </div>
+
+      <div class="testimonial-controls" id="testimonialDots">
+        <div class="testimonial-dot active" data-index="0"></div>
+        <div class="testimonial-dot" data-index="1"></div>
+        <div class="testimonial-dot" data-index="2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HYDERABAD LOCATIONS DIRECTORY SECTION -->
+  <section class="section-container" id="locations" style="background: var(--bg-card); border-top: 1px solid var(--border-parchment); border-bottom: 1px solid var(--border-parchment);">
+    <div class="section-subtitle">Our Lounges in Hyderabad</div>
+    <h2 class="section-title">Premium Locations</h2>
+    <div class="filigree-divider">
+      <div class="filigree-line"></div>
+      <div class="filigree-diamond"></div>
+      <div class="filigree-line"></div>
+    </div>
+
+    <p style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem; color: var(--text-muted); font-size: 1.05rem;">
+      Experience the elegance of Café de Flore in the most prestigious neighbourhoods of Hyderabad. Each location offers a unique ambiance — from private gardens to art galleries.
+    </p>
+
+    <div class="support-grid" style="grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
+      <!-- Jubilee Hills -->
+      <div class="support-card" style="text-align: left; padding: 2rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <span class="tag-badge special"><i class="fa-solid fa-crown"></i> Flagship Bistro</span>
+          <i class="fa-solid fa-building-columns" style="color: var(--accent-gold); font-size: 1.2rem;"></i>
+        </div>
+        <h3 class="support-title" style="font-size: 1.4rem; color: var(--accent-burgundy);">Jubilee Hills</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+          <i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 6px;"></i> Road No. 36, Jubilee Hills, Hyderabad
+        </p>
+        <p style="font-size: 0.85rem; color: var(--text-dark); margin-bottom: 1.25rem; font-style: italic;">
+          Classic interior with period woodwork, private garden terrace &amp; literary library.
+        </p>
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          <div><i class="fa-regular fa-clock"></i> 07:30 – 01:30 (Every day)</div>
+          <div><i class="fa-solid fa-phone"></i> +91 40 2355 1887</div>
+        </div>
+        <a href="#reservation" onclick="selectBranch('Jubilee Hills - Road No. 36')" class="btn-vintage btn-gold" style="width: 100%; font-size: 0.75rem;">
+          <i class="fa-solid fa-calendar-check"></i> Reserve at Jubilee Hills
+        </a>
+      </div>
+
+      <!-- Banjara Hills -->
+      <div class="support-card" style="text-align: left; padding: 2rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <span class="tag-badge"><i class="fa-solid fa-palette"></i> Art Gallery Salon</span>
+          <i class="fa-solid fa-gem" style="color: var(--accent-gold); font-size: 1.2rem;"></i>
+        </div>
+        <h3 class="support-title" style="font-size: 1.4rem; color: var(--accent-burgundy);">Banjara Hills</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+          <i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 6px;"></i> Road No. 12, Banjara Hills, Hyderabad
+        </p>
+        <p style="font-size: 0.85rem; color: var(--text-dark); margin-bottom: 1.25rem; font-style: italic;">
+          Tree-shaded courtyard, contemporary art exhibitions &amp; Parisian patio.
+        </p>
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          <div><i class="fa-regular fa-clock"></i> 08:00 – 00:00 (Every day)</div>
+          <div><i class="fa-solid fa-phone"></i> +91 40 2334 1887</div>
+        </div>
+        <a href="#reservation" onclick="selectBranch('Banjara Hills - Road No. 12')" class="btn-vintage btn-outline-gold" style="width: 100%; font-size: 0.75rem; color: var(--text-dark);">
+          <i class="fa-solid fa-calendar-check"></i> Reserve at Banjara Hills
+        </a>
+      </div>
+
+      <!-- Gachibowli -->
+      <div class="support-card" style="text-align: left; padding: 2rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <span class="tag-badge"><i class="fa-solid fa-mug-hot"></i> Executive Lounge</span>
+          <i class="fa-solid fa-laptop-code" style="color: var(--accent-gold); font-size: 1.2rem;"></i>
+        </div>
+        <h3 class="support-title" style="font-size: 1.4rem; color: var(--accent-burgundy);">Gachibowli</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+          <i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 6px;"></i> Knowledge City, Financial District, Hyderabad
+        </p>
+        <p style="font-size: 0.85rem; color: var(--text-dark); margin-bottom: 1.25rem; font-style: italic;">
+          Business lounge space, roasted espresso bar &amp; covered outdoor terrace.
+        </p>
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          <div><i class="fa-regular fa-clock"></i> 07:00 – 01:00 (Every day)</div>
+          <div><i class="fa-solid fa-phone"></i> +91 40 4012 1887</div>
+        </div>
+        <a href="#reservation" onclick="selectBranch('Gachibowli - Financial District')" class="btn-vintage btn-outline-gold" style="width: 100%; font-size: 0.75rem; color: var(--text-dark);">
+          <i class="fa-solid fa-calendar-check"></i> Reserve at Gachibowli
+        </a>
+      </div>
+
+      <!-- Hitech City -->
+      <div class="support-card" style="text-align: left; padding: 2rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <span class="tag-badge special"><i class="fa-solid fa-music"></i> Jazz &amp; Rooftop</span>
+          <i class="fa-solid fa-martini-glass" style="color: var(--accent-gold); font-size: 1.2rem;"></i>
+        </div>
+        <h3 class="support-title" style="font-size: 1.4rem; color: var(--accent-burgundy);">Hitech City</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+          <i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 6px;"></i> Cyber Towers Main Rd, Hitech City, Hyderabad
+        </p>
+        <p style="font-size: 0.85rem; color: var(--text-dark); margin-bottom: 1.25rem; font-style: italic;">
+          Panoramic rooftop with city views, live jazz evenings every weekend.
+        </p>
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          <div><i class="fa-regular fa-clock"></i> 08:00 – 01:30 (Every day)</div>
+          <div><i class="fa-solid fa-phone"></i> +91 40 4588 1887</div>
+        </div>
+        <a href="#reservation" onclick="selectBranch('Hitech City - Cyber Towers')" class="btn-vintage btn-burgundy" style="width: 100%; font-size: 0.75rem;">
+          <i class="fa-solid fa-calendar-check"></i> Reserve at Hitech City
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLE RESERVATION SECTION -->
+  <section class="section-container" id="reservation">
+    <div class="section-subtitle">A Moment of Excellence</div>
+    <h2 class="section-title">Reserve a Table</h2>
+    <div class="filigree-divider">
+      <div class="filigree-line"></div>
+      <div class="filigree-diamond"></div>
+      <div class="filigree-line"></div>
+    </div>
+
+    <div class="reservation-container">
+      <form id="reservationForm" onsubmit="handleReservationSubmit(event)">
+        <div class="reservation-form-grid">
+          <div class="form-group full-width">
+            <label class="form-label" for="resBranch">Choose Location (Hyderabad) *</label>
+            <select id="resBranch" class="form-select" required style="border-color: var(--accent-gold); font-weight: 600;">
+              <option value="Jubilee Hills - Road No. 36" selected>📍 Jubilee Hills (Flagship Bistro — Road No. 36)</option>
+              <option value="Banjara Hills - Road No. 12">📍 Banjara Hills (Art Gallery Salon — Road No. 12)</option>
+              <option value="Gachibowli - Financial District">📍 Gachibowli (Financial District / Knowledge City)</option>
+              <option value="Hitech City - Cyber Towers">📍 Hitech City (Cyber Towers Road &amp; Rooftop Deck)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="resName">Full Name *</label>
+            <input type="text" id="resName" class="form-input" placeholder="e.g. Rajesh Sharma" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="resEmail">Email Address *</label>
+            <input type="email" id="resEmail" class="form-input" placeholder="e.g. rajesh.sharma@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="resPhone">Phone Number *</label>
+            <input type="tel" id="resPhone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="resGuests">Number of Guests *</label>
+            <select id="resGuests" class="form-select" required>
+              <option value="1">1 Person</option>
+              <option value="2" selected>2 Persons</option>
+              <option value="3">3 Persons</option>
+              <option value="4">4 Persons</option>
+              <option value="5">5 Persons</option>
+              <option value="6+">6 or more (Private Dining)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="resDate">Date *</label>
+            <input type="date" id="resDate" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="resTime">Service Time *</label>
+            <select id="resTime" class="form-select" required>
+              <option value="08:30">08:30 — Breakfast</option>
+              <option value="10:30">10:30 — Coffee Break</option>
+              <option value="12:30" selected>12:30 — Bistro Lunch</option>
+              <option value="15:30">15:30 — Afternoon Tea</option>
+              <option value="19:30">19:30 — Literary Dinner</option>
+              <option value="21:30">21:30 — Cocktail Evening</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="form-label" for="resSeating">Preferred Seating</label>
+            <select id="resSeating" class="form-select">
+              <option value="Parisian Terrace">Parisian Terrace (Boulevard View)</option>
+              <option value="Historic Lounge" selected>Historic Lounge (Ground Floor)</option>
+              <option value="Private Mezzanine">Private Mezzanine (Upper Level)</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="form-label" for="resNotes">Special Requests</label>
+            <textarea id="resNotes" class="form-textarea" rows="3" placeholder="Dietary restrictions, birthday celebration, quiet table..."></textarea>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button type="submit" class="btn-vintage btn-burgundy" style="padding: 0.9rem 2.5rem; font-size: 0.9rem;">
+            <i class="fa-solid fa-stamp"></i> Confirm My Reservation
+          </button>
+        </div>
+      </form>
+    </div>
+  <!-- CUSTOMER SUPPORT SECTION (WHATSAPP, INSTAGRAM, EMAIL, PHONE) -->
+  <section class="section-container" id="support" style="background: var(--bg-parchment-subtle); border-top: 1px solid var(--border-parchment); border-bottom: 1px solid var(--border-parchment);">
+    <div class="section-subtitle">24/7 Support &amp; Direct Contact</div>
+    <h2 class="section-title">Customer Service &amp; Concierge</h2>
+    <div class="filigree-divider">
+      <div class="filigree-line"></div>
+      <div class="filigree-diamond"></div>
+      <div class="filigree-line"></div>
+    </div>
+
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: var(--text-muted); font-size: 1.05rem;">
+      Our team is entirely at your service for enquiries, VIP reservation requests, private dining bookings, or order assistance.
+    </p>
+
+    <div class="support-grid">
+      <!-- WhatsApp Support -->
+      <div class="support-card">
+        <div class="support-icon whatsapp-bg">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <h3 class="support-title">WhatsApp Support</h3>
+        <p class="support-detail">+91 98765 43210<br>(Direct Chat &amp; Fast Response)</p>
+        <a href="https://wa.me/919515104733?text=Hello%20Café%20de%20Flore,%20I%20would%20like%20some%20information%20or%20to%20reserve%20a%20table." target="_blank" class="btn-vintage btn-gold" style="font-size: 0.75rem; width: 100%;">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Instagram Page -->
+      <div class="support-card">
+        <div class="support-icon instagram-bg">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <h3 class="support-title">Official Instagram</h3>
+        <p class="support-detail">@cafedeflore_official<br>(Photos, Behind the Scenes &amp; News)</p>
+        <a href="https://www.instagram.com" target="_blank" class="btn-vintage btn-outline-gold" style="font-size: 0.75rem; width: 100%; color: var(--text-dark); border-color: var(--accent-burgundy);">
+          <i class="fa-brands fa-instagram"></i> Follow on Instagram
+        </a>
+      </div>
+
+      <!-- Email Support -->
+      <div class="support-card">
+        <div class="support-icon email-bg">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <h3 class="support-title">Email Support</h3>
+        <p class="support-detail">hello@cafedeflore.com<br>(Private Events &amp; Press)</p>
+        <a href="mailto:hello@cafedeflore.com?subject=Enquiry%20—%20Café%20de%20Flore" class="btn-vintage btn-outline-gold" style="font-size: 0.75rem; width: 100%; color: var(--text-dark);">
+          <i class="fa-regular fa-paper-plane"></i> Send an Email
+        </a>
+      </div>
+
+      <!-- Phone Direct -->
+      <div class="support-card">
+        <div class="support-icon phone-bg">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <h3 class="support-title">Direct Phone</h3>
+        <p class="support-detail">+91 40 2355 1887<br>(07:30 – 01:30, Every Day)</p>
+        <a href="tel:+914023551887" class="btn-vintage btn-burgundy" style="font-size: 0.75rem; width: 100%;">
+          <i class="fa-solid fa-phone"></i> Call the Concierge
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & HOURS MAP SECTION -->
+  <section class="section-container" id="contact">
+    <div class="section-subtitle">Hyderabad — Prime Locations</div>
+    <h2 class="section-title">Find Us &amp; Opening Hours</h2>
+    <div class="filigree-divider">
+      <div class="filigree-line"></div>
+      <div class="filigree-diamond"></div>
+      <div class="filigree-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="info-box">
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="info-text-title">Flagship Address</div>
+            <div class="info-text-detail">Road No. 36, Jubilee Hills, Hyderabad — 500033</div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+          <div>
+            <div class="info-text-title">Opening Hours</div>
+            <div class="info-text-detail">Every day from 07:30 to 01:30 (Continuous Service)</div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div class="info-text-title">Phone</div>
+            <div class="info-text-detail">+91 9515104733</div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-train-subway"></i></div>
+          <div>
+            <div class="info-text-title">Metro Access</div>
+            <div class="info-text-detail">Jubilee Hills Check Post — Metro Corridor 2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stylized Vintage Map representation -->
+      <div class="vintage-map-container">
+        <div class="map-bg-pattern"></div>
+        <div class="map-pin">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <div class="map-label">Café de Flore</div>
+        <div class="map-sublabel">Road No. 36 • Jubilee Hills, Hyderabad</div>
+        <a href="https://maps.google.com/?q=Jubilee+Hills+Road+No+36+Hyderabad" target="_blank" class="btn-vintage btn-gold" style="font-size: 0.75rem;">
+          <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-name" style="color: var(--text-light); font-size: 1.5rem;">Café de Flore</div>
+        <div class="brand-sub" style="margin-bottom: 1rem;">Hyderabad — Since 1887</div>
+        <p class="footer-brand-desc">
+          A historic institution and temple of Parisian literary life, now brought to the heart of Hyderabad.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-title">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#histoire">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-title">Specialities</div>
+        <ul class="footer-links">
+          <li><a href="#menu">Hot Chocolate Flore</a></li>
+          <li><a href="#menu">Croque-Monsieur</a></li>
+          <li><a href="#menu">Filter Coffee Origin</a></li>
+          <li><a href="#menu">Prix de Flore</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-title">Stay Updated</div>
+        <p style="font-size: 0.85rem; color: rgba(245,238,223,0.7); margin-bottom: 1rem;">
+          Receive literary news and events from the Flore.
+        </p>
+        <div style="display: flex; gap: 0.5rem;">
+          <input type="email" placeholder="Your email" class="form-input" style="padding: 0.5rem; font-size: 0.8rem;">
+          <button class="btn-vintage btn-gold" style="padding: 0.5rem 1rem;">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Café de Flore. All rights reserved.</div>
+      <div>Crafted with passion for the Art of Parisian Living.</div>
+    </div>
+  </footer>
+
+  <!-- MODAL: LIGHTBOX GALLERY -->
+  <div class="modal-backdrop" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="modal-card" style="text-align: center; max-width: 700px; padding: 1.5rem;" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeLightboxDirect()">&times;</button>
+      <img id="lightboxImg" src="" alt="Gallery" style="width: 100%; height: 400px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-gold);">
+      <h3 id="lightboxTitle" style="font-family: var(--font-title); font-size: 1.5rem; margin-top: 1rem; color: var(--bg-mahogany);"></h3>
+    </div>
+  </div>
+
+  <!-- MODAL: RESERVATION CONFIRMATION (WAX SEAL) -->
+  <div class="modal-backdrop" id="confirmModal">
+    <div class="modal-card" style="text-align: center;">
+      <button class="modal-close-btn" onclick="closeConfirmModal()">&times;</button>
+      <div class="wax-seal">F</div>
+      <h3 style="font-family: var(--font-title); font-size: 1.8rem; color: var(--accent-burgundy); margin-bottom: 0.5rem;">
+        Reservation Confirmed!
+      </h3>
+      <p style="font-family: var(--font-heading); font-size: 1.2rem; font-style: italic; color: var(--text-dark); margin-bottom: 1.5rem;">
+        "A table awaits you beneath the golden glow of the Flore."
+      </p>
+      <div id="confirmDetails" style="background: var(--bg-parchment-subtle); border: 1px dashed var(--border-gold); padding: 1rem; text-align: left; font-size: 0.9rem; margin-bottom: 1.5rem; border-radius: 4px;">
+        <!-- Injected via JS -->
+      </div>
+      <button class="btn-vintage btn-gold" onclick="closeConfirmModal()" style="width: 100%;">
+        Perfect, see you soon!
+      </button>
+    </div>
+  </div>
+
+  <!-- FLOATING SUPPORT & RESERVATION WIDGET BAR -->
+  <div class="floating-widget-bar">
+    <a href="https://wa.me/919515104733?text=Hello%20Café%20de%20Flore,%20I%20would%20like%20information%20or%20to%20place%20an%20order." target="_blank" class="floating-btn floating-whatsapp" title="WhatsApp Customer Support">
+      <div class="floating-badge-dot"></div>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#reservation" class="floating-btn floating-reservation" title="Reserve a Table">
+      <i class="fa-solid fa-utensils"></i>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="silk.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
